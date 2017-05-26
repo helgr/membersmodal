@@ -1,4 +1,4 @@
-<?php require "/includes/config.php"; ?>
+<!-- <?php // require "/includes/config.php"; ?> -->
 
 <!DOCTYPE html>
 <html dir="ltr" lang="ru">
@@ -25,21 +25,6 @@
 
 			</header><!-- #header end -->
 
-			<!-- Page Title
-			============================================= -->
-			<section id="page-title" class="page-title-parallax page-title-dark" style="background-image: url('images/team-bg.jpg'); padding: 120px 0;" data-stellar-background-ratio="0.3">
-
-				<div class="container clearfix">
-					<h1><?php echo $config['title'];?></h1>
-					<!-- <span>По дороге встретил текст рукопись</span> -->
-					<ol class="breadcrumb">
-						<li><a href="index.php">Главная</a></li>
-						<li class="active">Наша команда</li>
-					</ol>
-				</div>
-
-			</section><!-- #page-title end -->
-
 			<!-- Content
 			============================================= -->
 			<section id="content">
@@ -58,7 +43,7 @@
 								</div>
 
 								<div class="team-desc">
-									<div class="team-title"><h4><a href="#myModal" data-toggle="modal" data-content="memeber_LVP">Лилиана Владимировна Поликарпова</a></h4><span>Руководитель Центра оценки квалификаций АО «НИИМЭ»</span></div>
+									<div class="team-title"><h4><a class="modallink" href="#myModal" data-toggle="modal" data-content="member_LVP">Лилиана Владимировна Поликарпова</a></h4><span>Руководитель Центра оценки квалификаций АО «НИИМЭ»</span></div>
 									<div class="team-content">
 										<p>Зам.генерального директора по организационному развитию и управлению персоналом АО «НИИМЭ»<br> ЭКСПЕРТ ПО ОЦЕНКЕ</p>
 									</div>
@@ -85,7 +70,7 @@
 									<img src="images/team/zabodaeva.jpg" alt="Zabodaeva">
 								</div>
 								<div class="team-desc">
-									<div class="team-title"><h4><a href="#myModal" data-toggle="modal" data-content="NNZ">Нина Николаевна Забодаева</a></h4><span>Заместитель руководителя Центра оценки квалификаций АО «НИИМЭ»</span></div>
+									<div class="team-title"><h4><a class="modallink" href="#myModal" data-toggle="modal" data-content="NNZ">Нина Николаевна Забодаева</a></h4><span>Заместитель руководителя Центра оценки квалификаций АО «НИИМЭ»</span></div>
 									<div class="team-content">
 										<p>ЭКСПЕРТ ПО ОЦЕНКЕ</p>
 									</div>
@@ -340,12 +325,21 @@
 				</div>
 
 						<!-- Modal -->
+
 						<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						    <div class="modal-dialog">
+						        <div class="modal-content">
+
+						        </div>
+						    </div>
+						</div>
+
+						<!-- <!-- <!-- <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 							<div class="modal-dialog">
 								<div class="modal-body">
 									<div class="modal-content">
 										<div class="modal-body">
-											<!-- memeberI D -->
+											<!-- memeberI D --
 											<h4>Overflowing text to show scroll behavior</h4>
 											<div class="team-image">
 												<img src="images/team/polikarpova.jpg" alt="Polikarpova">
@@ -362,12 +356,12 @@
 										</div>
 										<div class="modal-footer">
 											<button type="button" class="btn btn-default" data-dismiss="modal">Ok</button>
-											<!-- <button type="button" class="btn btn-primary">Save changes</button>-->
+											<!-- <button type="button" class="btn btn-primary">Save changes</button>--
 										</div>
 									</div>
 								</div>
 							</div>
-						</div>
+						</div> -->
 
 
 			</section><!-- #content end -->
@@ -389,6 +383,8 @@
 		<script type="text/javascript" src="js/plugins.js"></script>
 
 		<script src="js/menu-hilight.js"></script>
+
+		<script src="js/team_member_id.js"></script>
 
 		<!-- Footer Scripts
 		============================================= -->

@@ -1,10 +1,8 @@
-$('.modalLink').click(function(){
-    var famID=$(this).attr('data-id');
-    var famAddr=$(this).attr('data-addr');
-    var famPhone=$(this).attr('data-phone');
-    var famName=$(this).attr('data-name');
+$('.modallink').click(function(){
+    var member_id = $(this).attr('data-content');
 
-    $.ajax({url:"somepage.php?famID="+famID+"&famAddr="+famAddr+"&famPhone="+famPhone+"&famName="+famName,cache:false,success:function(result){
+    $.ajax({url:"member.php?member_id="+member_id,cache:false,success:function(result){
         $(".modal-content").html(result);
     }});
-});
+}); 
+
